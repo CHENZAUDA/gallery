@@ -1,0 +1,81 @@
+body{
+    background-color:black;
+    background-image: url("https://www.southerndestinations.com/wp-content/uploads/2014/09/Acacia-Tree-with-sunset.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-size: xx-large;
+    font-family: 'Redressed', cursive;
+    animation: body 3s linear 2 alternate; 
+ }
+ @keyframes body{
+     0%{transform: rotateY(0deg);}
+     100%{transform: rotateY(180deg);}
+ }
+ h1{
+    color: rgb(241, 176, 91);
+    background: brown;
+    width: fit-content;
+    text-align: center;
+    margin-left: 24%;
+    margin-bottom: 100px;
+    animation: title 2s linear 3s 2 alternate; 
+ }
+ @keyframes title{
+     0%{transform: scaleX(1);}
+     100%{transform: scaleX(2);}
+ }
+
+
+ ul{
+     margin: 10px;
+     padding: 0px;}
+ li{
+     margin: 17px;
+     padding: 3px;
+     display: inline-block;
+     background-color: blanchedalmond;
+     border:20px solid blanchedalmond;
+     text-align: center;
+     position: relative;
+     list-style: none;
+     border-radius: 7%;
+     box-shadow: blanchedalmond 3px 3px ;
+     color: brown;        
+ }
+ img{
+     padding: 0px;
+     width:230px ;
+     height: 230px;
+     animation-name: pic;
+ }
+  li:hover{
+     animation: pic 3s linear  infinite alternate;}
+ li:nth-child(2n){
+     transform: rotate(10deg);
+ }
+ li:nth-child(odd){
+     transform: rotate(-15deg);
+ }
+
+ #one{
+     filter: blur(5px);
+ }
+ #two{
+     filter: brightness(80%);
+ }
+ #three{
+     filter: contrast(150%);   
+ }
+ #four{
+     filter: grayscale(100%);
+ }
+ #five{
+     filter:sepia(40%)
+ }
+ #six{
+     filter: invert(42%);
+ }
+@keyframes pic{
+    0%{  transform:rotateY(0deg);}
+    100%{ transform:rotateY(360deg);}
+}
